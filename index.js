@@ -40,7 +40,7 @@ module.exports = async (req, res) => {
     console.log(response)
   })
   .catch(function (err) {
-  	res.end(error)
+  	res.end(err)
   })
 
   res.end(`<script>window.open('','_self').close()</script>`)
